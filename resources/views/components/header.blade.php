@@ -1,11 +1,26 @@
-<div class="bg-blue-500 p-4 flex justify-between items-center">
+<!-- Navbar -->
+<div class="navbar bg-blue-500 p-4">
+    <!-- Left side: Title -->
+    <div class="flex-1">
+        <a class="text-xl font-bold text-white ml-5">DefinitelyNotTwitter</a>
+    </div>
 
-    <div class="text-white text-xl font-bold ml-5">DefinitelyNotTwitter</div>
+    <!-- Right side: Input fields and Login button -->
+    <div class="flex-none">
+        <form class="flex items-center space-x-4">
+            <!-- Username Input -->
+            <input type="text" placeholder="Username"
+                class="input input-bordered w-40 p-2 text-gray-800 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200" />
 
+            <!-- Password Input -->
+            <input type="password" placeholder="Password"
+                class="input input-bordered w-40 p-2 text-gray-800 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200" />
 
-    <form class="flex items-center space-x-4 mr-6">
-        <input type="text" placeholder="username" class="p-2 rounded">
-        <input type="password" placeholder="password" class="p-2 rounded">
-        <button type="submit" class="bg-white p-2 rounded">Sign In</button>
-    </form>
+            <!-- Login Button -->
+            <button type="submit"
+                class="btn btn-primary bg-white text-blue-500 hover:bg-blue-600 hover:text-white border-none px-4 py-2 rounded-lg shadow-md transition duration-200">
+                Login
+            </button>
+        </form>
+    </div>
 </div>

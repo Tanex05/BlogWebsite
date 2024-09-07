@@ -9,10 +9,10 @@
 
 
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen ">
     <x-header/>
 
-    <div class="flex-grow container mx-auto p-4 text-center">
+    <div class="flex-grow align-middle">
         {{ $slot }}
     </div>
 
