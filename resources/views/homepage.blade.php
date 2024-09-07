@@ -13,6 +13,10 @@
     <!-- Right Side: Signup Form -->
     <div class="flex-1 flex items-center justify-center">
         <form class="w-full max-w-lg bg-white p-6 rounded-lg shadow-md">
+            @csrf
+
+            <!-- Title -->
+            <label for="" class="block text-3xl font-large text-gray-700 text-center font-bol font-bold">Sign Up</label>
             <!-- Username Field -->
             <div class="mb-4">
                 <label class="block text-lg font-medium text-gray-700">Username</label>

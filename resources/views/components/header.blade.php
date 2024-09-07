@@ -7,7 +7,8 @@
 
     <!-- Right side: Input fields and Login button -->
     <div class="flex-none">
-        <form class="flex items-center space-x-4">
+        <form action="POST" class="flex items-center space-x-4">
+            @csrf
             <!-- Username Input -->
             <input type="text" placeholder="Username"
                 class="input input-bordered w-40 p-2 text-gray-800 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200" />
