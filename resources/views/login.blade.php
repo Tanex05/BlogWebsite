@@ -1,50 +1,46 @@
 <x-layout>
-<!-- Main Container -->
-<div class="flex flex-col md:flex-row space-y-10 md:space-y-0 md:space-x-10 p-36">
 
-    <!-- Left Side: Header and Paragraph -->
-    <div class="flex-1 flex flex-col justify-center">
-        <h1 class="text-5xl font-bold text-blue-600 mb-6">DefinitelyNotTwitter</h1>
-        <p class="text-lg leading-relaxed text-gray-700">
-            At Definitely Not Twitter, we're redefining social media with a fresh perspective. Our platform is designed to foster genuine conversations and meaningful connections without the noise and distractions of traditional social networks. Whether you're here to share your thoughts, engage with like-minded individuals, or stay informed, we provide a streamlined and intuitive experience that puts you in control. Discover a new way to connect, engage, and express yourself in a space that prioritizes your voice and your values.
-        </p>
+    <div class="flex justify-between min-h-screen">
+
+        {{-- Left --}}
+        <div class="flex-1 flex justify-center items-center">
+            <div class="ml-20">
+                <div class="text-4xl font-bold text-blue-500 mb-2">
+                    DefinitelyNotTwitter
+                </div>
+                <p class="text-2xl text-black mr-10">Connect with friends and the world around you on DefinitelyNotTwitter.</p>
+            </div>
+        </div>
+
+        {{-- Right --}}
+        <div class="bg-blue-400 flex-1 flex justify-center items-center">
+            <div class="m-20 bg-white p-4 rounded-lg shadow-md w-full">
+                <x-login-form />
+                <!-- Modal Trigger -->
+                <p class="text-center mt-4">
+                    Don't have an account?
+                    <label for="register-modal" class="text-blue-500 font-bold cursor-pointer">Register</label>
+                </p>
+            </div>
+        <div>
+
     </div>
 
-    <!-- Right Side: Signup Form -->
-    <div class="flex-1 flex items-center justify-center">
-        <form class="w-full max-w-lg bg-white p-6 rounded-lg shadow-md">
-            @csrf
+    <!-- Modal (hidden by default) -->
+    <input type="checkbox" id="register-modal" class="modal-toggle" />
+    <div class="modal">
+        <div class="modal-box">
+            <div class="flex justify-between items-center">
+                <!-- Centered heading -->
+                <h2 class="font-bold text-lg text-center flex-grow">Register</h2>
 
-            <!-- Title -->
-            <label for="" class="block text-3xl font-large text-gray-700 text-center font-bol font-bold">Sign Up</label>
-            <!-- Username Field -->
-            <div class="mb-4">
-                <label class="block text-lg font-medium text-gray-700">Username</label>
-                <input type="text" placeholder="Username" class="input input-bordered w-full p-2 mt-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">
+                <!-- Close button (X icon) -->
+                <label for="register-modal" class="btn btn-sm btn-circle">✕</label>
             </div>
+            <p class="py-4 text-center">Create your account and start connecting with friends.</p>
 
-            <!-- Email Field -->
-            <div class="mb-4">
-                <label class="block text-lg font-medium text-gray-700">Email</label>
-                <input type="email" placeholder="Email" class="input input-bordered w-full p-2 mt-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">
-            </div>
-
-            <!-- Password Field -->
-            <div class="mb-4">
-                <label class="block text-lg font-medium text-gray-700">Password</label>
-                <input type="password" placeholder="Password" class="input input-bordered w-full p-2 mt-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">
-            </div>
-
-            <!-- Confirm Password Field -->
-            <div class="mb-4">
-                <label class="block text-lg font-medium text-gray-700">Confirm Password</label>
-                <input type="password" placeholder="Confirm Password" class="input input-bordered w-full p-2 mt-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-200">
-            </div>
-
-            <!-- Sign Up Button -->
-            <button class="btn btn-primary w-full bg-blue-500 text-white py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-200">Sign Up</button>
-        </form>
+            <!-- Registration Form -->
+            <x-registration-form />
+        </div>
     </div>
-
-</div>
 </x-layout>
