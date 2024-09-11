@@ -6,9 +6,9 @@ Route::get('/', function () {
     return view('login');
 })->name('login');
 
-Route::get('/blog', function () {
+Route::get('/home', function () {
     return view('blog');
-})->name('blogs');
+})->name('home');
 
 Route::get('/profile', function () {
     return view('profile');

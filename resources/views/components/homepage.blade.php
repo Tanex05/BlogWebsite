@@ -2,7 +2,7 @@
     <div class="flex flex-col md:flex-row items-stretch space-y-10 md:space-y-0 md:space-x-5 m-20">
         {{-- Sidebar Navigation --}}
         <div id="sidebar" class="w-1/5 h-full text-white bg-white rounded-lg shadow-md p-6 overflow-auto sticky top-20">
-            <x-sidebar-navigation route="{{ route('blogs') }}" icon="bi bi-house" name="Home" />
+            <x-sidebar-navigation route="{{ route('home') }}" icon="bi bi-house" name="Home" />
             <x-sidebar-navigation route="#" icon="bi bi-bell" name="Notifications" />
             <x-sidebar-navigation route="#" icon="bi bi-chat-dots" name="Messages" />
             <x-sidebar-navigation route="{{ route('profile') }}" icon="bi bi-person-circle" name="Profile" />
