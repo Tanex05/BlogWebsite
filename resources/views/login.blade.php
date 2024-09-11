@@ -1,5 +1,4 @@
 <x-layout>
-
     <div class="flex justify-between min-h-screen">
 
         {{-- Left --}}
