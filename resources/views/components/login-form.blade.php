@@ -1,4 +1,10 @@
 <form action="/login" method="POST">
+    @csrf
+    <div class="text-center">
+        <span class="font-bold text-lg">Sign In</span>
+        <p>We only allow fake issues to be posted. Spread the word!
+        </p>
+    </div>
     <div class="flex flex-col mb-2">
         <label class="label text-lg">
             <span class="label-text">Username</span>
