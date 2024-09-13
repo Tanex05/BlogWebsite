@@ -1,4 +1,8 @@
-<x-layout>
+@extends('layout.app')
+
+@section('title', 'Login')
+
+@section('content')
     <div class="flex justify-between min-h-screen">
 
         {{-- Left --}}
@@ -14,7 +18,7 @@
         {{-- Right --}}
         <div class="bg-blue-400 flex-1 flex justify-center items-center">
             <div class="m-20 bg-white p-4 rounded-lg shadow-md w-full">
-                <x-login-form />
+                <x-registration-login.login-form />
                 <!-- Modal Trigger -->
                 <p class="text-center mt-4">
                     Don't have an account?
@@ -39,7 +43,7 @@
             <p class="py-4 text-center">Create your account and start connecting with friends.</p>
 
             <!-- Registration Form -->
-            <x-registration-form />
+            <x-registration-login.registration-form />
         </div>
     </div>
-</x-layout>
+@endsection
