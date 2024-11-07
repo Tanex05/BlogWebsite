@@ -1,4 +1,4 @@
-# About This Project
+# About This Project - Unfinished
 
 This project aims to relearn Laravel fundamentals while focusing on creating a well-structured directory layout. It replicates key features of Twitter's blogging functionality and Facebook Marketplace, but with more advanced capabilities.
 
